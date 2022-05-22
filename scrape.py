@@ -80,7 +80,7 @@ class WebSearcher(GraphSearcher) :
 
 options = Options()
 options.headless = True
-service = Service(executable_path="/home/ankkitsharma/Desktop/python project/chromedriver")
+service = Service(executable_path="./chromedriver")
 driver = webdriver.Chrome(options=options, service=service)
 
 ws = WebSearcher(driver)
